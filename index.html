@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Attendance System</h1>
+        <div class="attendance-form">
+            <input type="text" id="studentName" placeholder="Enter Student Name" required>
+            <select id="attendanceStatus">
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+            </select>
+            <button onclick="markAttendance()">Mark Attendance</button>
+        </div>
+        <div class="attendance-list">
+            <h2>Attendance Records</h2>
+            <table id="attendanceTable">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Status</th>
+                        <th>Date & Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Attendance records will be populated here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
